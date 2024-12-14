@@ -1,0 +1,139 @@
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+/* Container */
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+}
+
+/* Right Section */
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #ffffff; /* Changed text color to white */
+    background-color: #008080; /* Changed background to teal */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    z-index: -1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Work Experience Section */
+#work-experience h3 {
+    background-color: #008080; /* Teal */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#work-experience h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    z-index: -1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+#skills {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+
+
+/* Button */
+button {
+    font-family: Arial, sans-serif;
+    border: none;
+    background-color: #008080; /* Initial teal color */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease, opacity 0.5s ease; /* Added opacity transition */
+}
+
+button:hover {
+    background-color: #006666; /* Darker teal color for hover */
+    opacity: 0.8; /* Fading effect on hover */
+}
+
+
+/* Objective and Certifications */
+section {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
